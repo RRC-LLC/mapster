@@ -1,0 +1,358 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0; 
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+html, body {
+  height: 100dvh;
+  width: 100%;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+.media-upload > input::placeholder, .media-upload > textarea::placeholder {
+  color: oklch(92.3% 0.003 48.717);
+  opacity: 50%; /* Firefox */
+}
+
+.search-input > input::placeholder {
+  color: black;
+}
+
+.search-input > input::-ms-input-placeholder {
+  color: black;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder { /* Edge 12 -18 */
+  color: oklch(92.3% 0.003 48.717);
+  opacity: 50%; /* Firefox */
+}
+
+
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+#showMap {
+  height: 100%;
+  width: 100%;
+}
+
+
+.parchment {
+  position: relative;
+  z-index: 1;
+  background-color: #f3eddc;
+  height: 100%;
+  width: 100%;
+}
+
+.parchment::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .20; 
+  z-index: -1;
+  background-image: url(/black-paper.png);
+  background-size: 50%;
+  pointer-events: none;
+  background-color: red;
+}
+
+.parchment-dark {
+  position: relative;
+  z-index: 0;
+  background-color: #e6dcc1;
+  height: 100%;
+  width: 100%;
+}
+
+.parchment-dark::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 8px;
+  width: 96%; 
+  height: 100%;  
+  opacity: .20; 
+  z-index: -1;
+  background-image: url(/black-paper.png);
+  background-size: 50%;
+}
+
+.wood {
+  position: relative;
+  background-color: #603C07;
+}
+
+.dark-wood {
+  position: relative;
+  z-index: 1;
+  background-color: #492C01;
+}
+
+.wood::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .20; 
+  z-index: -1;
+  background-image: url(/vertical_wood.png);
+  background-size: 50%;
+}
+
+.wood-550 {
+  position: relative;
+  z-index: 550;
+  background-color: #603C07;
+}
+
+.wood-550::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .20; 
+  z-index: -1;
+  background-image: url(/vertical_wood.png);
+  background-size: 50%;
+}
+
+
+.dark-wood::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .20; 
+  z-index: -1;
+  background-image: url(/vertical_wood.png);
+  background-size: 500%;
+}
+
+.dark-wood-small {
+  position: relative;
+  z-index: 1;
+  background-color: #492C01;
+}
+
+.dark-wood-small::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .20; 
+  z-index: -1;
+  background-image: url(/vertical_wood.png);
+  background-size: 100%;
+}
+
+.green-texture {
+  background-image: url(/square-green-crop.png);
+  background-size: 100%;
+}
+
+.green-texture-dark {
+  background-image: url(/square-dark-green.webp);
+  background-size: 100%;
+}
+
+.green-paper {
+  position: relative;
+  z-index: 5000;
+  background-color: #1B365D;
+}
+
+.green-paper::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .20; 
+  z-index: -1;
+  background-size: 25%;
+}
+
+.blue-paper {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-image: url(/cream-paper.png);
+  pointer-events: none;
+  background-size: 60%;
+  opacity: 80%;
+}
+
+.cream-paper {
+  position: relative;
+  z-index: 5000;
+  background-color: #FCF5E5;
+}
+
+.cream-paper::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .20; 
+  z-index: -1;
+  background-image: url(/cream-paper.png);
+  background-size: 25%;
+}
+
+.light-green-paper {
+  position: relative;
+  z-index: 1;
+  background-color: #73B700;
+}
+
+.light-green-paper::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: 100%; 
+  z-index: -1;
+  background-image: url(/square-green-crop.png);
+  background-size: 100%;
+}
+
+.dark-green-paper {
+  position: relative;
+  z-index: 1;
+  background-color: #174E00;
+}
+
+.dark-green-paper::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: 100%; 
+  z-index: -1;
+  background-image: url(/square-dark-green.webp);
+  background-size: 100%;
+}
+
+.green-button {
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 13px;
+  height: 32px;
+  width: 148px;
+  overflow: hidden;
+  background: linear-gradient(0deg,rgba(51, 138, 65, 1) 0%, rgba(57, 156, 73, 1) 100%);
+  box-shadow:
+    0px 0px 1px 1px rgba(255, 255, 255, 0.08) inset,
+    0px 1px 1.5px 0px rgba(0, 0, 0, 0.32),
+    0px 0px 0px 0.5px rgba(57, 156, 73, 1);
+  position: relative;
+  text-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.16);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.wood-shadow {
+  box-shadow:
+  0px 0px 1px 1px rgba(255, 255, 255, 0.08) inset,
+  0px 1px 1.5px 0px rgba(0, 0, 0, 0.32),
+  0px 0px 0px 0.5px #603C07;
+}
+
+.gallery {
+  content: "";  
+  position: relative;
+  box-shadow: 0px 0px 16.715px 8.358px #000 inset;
+}
+
+.gallery::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: #f60000;
+  box-shadow: 0px 0px 16.715px 8.358px #000 inset;
+}
+
+.hidden-scrollbar {
+  /*FireFox*/
+  scrollbar-width: none;
+  /*IE10+*/
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.hidden-scrollbar::-webkit-scrollbar {
+  /*Chrome, Safari, Edge*/
+  display: none;
+}

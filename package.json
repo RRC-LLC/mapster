@@ -1,0 +1,48 @@
+{
+  "name": "groveography",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hello-pangea/dnd": "^16.6.0",
+    "@payloadcms/db-mongodb": "^3.58.0",
+    "@payloadcms/email-resend": "^3.58.0",
+    "@payloadcms/next": "^3.58.0",
+    "@payloadcms/richtext-lexical": "^3.58.0",
+    "@payloadcms/storage-s3": "^3.58.0",
+    "@radix-ui/react-tooltip": "^1.2.4",
+    "framer-motion": "^12.9.1",
+    "graphql": "^16.10.0",
+    "leaflet": "^1.9.4",
+    "next": "^15.1.6",
+    "payload": "^3.58.0",
+    "plaiceholder": "^3.0.0",
+    "proj4leaflet": "^1.0.2",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-google-recaptcha": "^3.1.0",
+    "react-hook-form": "^7.51.4",
+    "react-icons": "^5.2.1",
+    "react-use-measure": "^2.1.7",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
+    "autoprefixer": "^10.0.1",
+    "csv-parse": "^5.5.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

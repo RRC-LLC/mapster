@@ -1,0 +1,41 @@
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "neue-haas-unica";
+    src: url("https://use.typekit.net/mnk2otu.css"),
+}
+
+:root {
+    
+    --color-base-0: rgb(255, 255, 255);
+    --color-base-50: hsl(50, 20%, 99%);
+    --color-base-100: hsl(48, 16%, 96%);
+    --color-base-150: hsl(48, 14%, 94%);
+    --color-base-200: hsl(45, 13%, 92%);
+    --color-base-250: hsl(44, 13%, 90%);
+    --color-base-300: hsl(44, 12%, 86%);
+    --color-base-350: hsl(44, 11%, 82%);
+    --color-base-400: hsl(44, 11%, 79%);
+    --color-base-450: hsl(43, 10%, 76%);
+    --color-base-500: hsl(42, 9%, 72%); /* Base color */
+    --color-base-550: hsl(42, 9%, 65%);
+    --color-base-600: hsl(41, 8%, 57%);
+    --color-base-650: hsl(41, 7%, 49%);
+    --color-base-700: hsl(41, 7%, 42%);
+    --color-base-750: hsl(40, 7%, 35%);
+    --color-base-800: hsl(39, 6%, 28%);
+    --color-base-850: hsl(39, 7%, 21%);
+    --color-base-900: hsl(38, 7%, 15%);
+    --color-base-950: hsl(36, 8%, 10%);
+    --color-base-1000: rgb(0, 0, 0);
+
+}
+
+
+
+span.radio-input__styled-radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
