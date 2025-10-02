@@ -7,7 +7,7 @@ This is the repository for the [Pinegrove Map Project](https://mapster.pinegrove
 ## Environment Setup
 ### Prod
 
-The codebase is configured for production using MongoDB, S3-compatible object storage for images + files, Resend for emails, and ReCAPTCHA for uploads. 
+The codebase is configured for production using MongoDB, S3-compatible object storage for images + files, Resend for emails, and ReCAPTCHA for uploads. See `.env.example` for a list of the necessary environment variables.
 
 ### Dev
 
