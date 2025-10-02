@@ -28,7 +28,7 @@ export default function InfoModal({ closeModal }) {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.7 }}
                 transition={{ duration: 0.15, ease: "easeOut" }}
-                className="wood-shadow drop-shadow-xl wood-550 max-w-[95vw] w-content rounded flex justify-center my-24 p-2 pt-0 h-content max-h-[85vh]"
+                className="wood-shadow drop-shadow-xl wood-550 max-w-[95vw] w-content rounded flex justify-center my-24 p-2 pt-0 h-content max-h-[85svh]"
             >
                 <div className="z-[500] flex w-full items-center flex-col gap-1">
                     <div className="flex pt-[4px] pb-1 px-2 text-xl font-pg w-full text-trail-yellow justify-between">
@@ -36,7 +36,7 @@ export default function InfoModal({ closeModal }) {
                         <div className="cursor-pointer" onClick={handleClose}>x</div>
                     </div>
 
-                    <section className="relative h-1/2 flex w-full px-4 pt-6 sm:pt-8 pb-5 rounded-sm shadow-inner-show bg-gray-2 flex-grow flex-col max-w-prose">
+                    <section className="relative h-1/2 flex w-full px-2 sm:px-4 pt-6 sm:pt-8 pb-5 rounded-sm shadow-inner-show bg-gray-2 flex-grow flex-col max-w-prose">
                         <div className="w-full h-full flex flex-col gap-6 pb-6 overflow-scroll">
                             <p className="text-cream px-2 sm:px-4">What is a map if not a registry of different places shows can happen?</p>
                             <p className="text-cream px-2 sm:px-4">In 2014, with this philosophy in tow, Pinegrove embarked on a 5 week US tour of DIY spaces across the country, along with our band-friend Tawny Peaks, booked totally by ourselves, using nothing but social media & a map.</p>
