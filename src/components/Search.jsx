@@ -490,7 +490,7 @@ export default function Search({ data, markers, showMarker, route, map, searchOp
                     })
                     .on('click', () => {
                         setLoading(true)
-                        router.push(`/shows/${show.slug}`)
+                        router.push(`${scoot ? "#": `/shows/${show.slug}`}`)
                     })
                     .addTo(markers)
                 
@@ -508,7 +508,7 @@ export default function Search({ data, markers, showMarker, route, map, searchOp
                     })
                     .on('click', () => {
                         setLoading(true)
-                        router.push(`/shows/${show.slug}`)
+                        router.push(`${scoot ? "#": `/shows/${show.slug}`}`)
                     })
                     .addTo(markers)
             
@@ -782,7 +782,7 @@ export default function Search({ data, markers, showMarker, route, map, searchOp
                                                 {searchState.activeData.map(((show, i) => <Link 
                                                     className="hover:underline" 
                                                     key={`result${i}`} 
-                                                    href={`/shows/${show.slug}`}
+                                                    href={`${scoot ? "#": `/shows/${show.slug}`}`}
                                                     onPointerOver={() => {highlightShowMarker(show)}}
                                                     onPointerOut={clearShowMarker}
                                                 >
