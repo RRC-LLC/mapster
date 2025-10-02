@@ -680,7 +680,7 @@ export default function Search({ data, markers, showMarker, route, map, searchOp
                     <motion.div
                         id="search-container"
                         animate={{ height: bounds.height + 40 }}
-                        transition={{ duration: 0.15, ease: "easeOut" }}
+                        transition={{ duration: 0.1, ease: "easeOut" }}
                         className="search-input flex flex-col gap-1 py-2 h-auto parchment-dark rounded shadow-inner-search overflow-hidden"
                     >
                         <input 
@@ -770,16 +770,6 @@ export default function Search({ data, markers, showMarker, route, map, searchOp
                             
                             </div>
 
-                            <AnimatePresence mode="popLayout" initial={false} custom={direction}>
-                                <motion.div
-                                    key={displayResults ? 'results' : 'filters'}
-                                    variants={variants}
-                                    initial="initial"
-                                    animate="active"
-                                    exit="exit"
-                                    custom={direction}
-                                    transition={{ duration: 0.4, type: "spring", bounce: 0 }}
-                                >
                                     {displayResults ? (
                                         <div className="flex gap-2 mt-6 flex-col w-full">
                                             {!scoot && <SummaryStatistics topStatistics={searchState.topStatistics} activateFilter={activateFilter}/>}
@@ -930,8 +920,6 @@ export default function Search({ data, markers, showMarker, route, map, searchOp
                                             </div>}
                                         </>
                                     )}
-                                </motion.div>
-                            </AnimatePresence>
                             {scoot && <audio src="/scoot.m4a" autoPlay />}
                     </div>
                 </div>
