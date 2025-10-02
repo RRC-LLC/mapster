@@ -158,7 +158,7 @@ export default function ShowEditor({ showId, type, content, closeModal }) {
                                                                     defaultValue={`${item.name}`} // make sure to set up defaultValue
                                                                     {...register(`content.${index}.name`)}
                                                                 />
-                                                                <button type="button" title="delete"className="text-cream ml-1 text-xl" onClick={() => remove(index)}><MdDeleteForever/></button>
+                                                                <button type="button" title="delete"className="text-cream opacity-50 hover:opacity-100 transition-opacity duration-150 ease ml-2 text-lg" onClick={() => remove(index)}><MdDeleteForever/></button>
                                                             </li>
                                                         )}
                                                     </Draggable>
@@ -174,7 +174,7 @@ export default function ShowEditor({ showId, type, content, closeModal }) {
 
                         <button
                             type="button"
-                            className="flex w-24 text-cream items-center gap-2"
+                            className="flex w-24 text-sm mt-2 text-cream opacity-50 hover:opacity-100 transition-opacity duration-150 ease items-center gap-2"
                             onClick={() => {
                                 append({ name: "" });
                             }}

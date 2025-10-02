@@ -102,7 +102,7 @@ export default function ImageForm({ showId, closeModal, recaptchaRef }) {
                             onChange: (e) => setTermsAccepted(e.target.checked)
                         })}
                     />
-                    &nbsp; I agree to the <a href='/Pinegrove_Web_Release.pdf' className="text-trail-yellow" target="_blank">Terms of Service</a>
+                    &nbsp; I agree to the <a href='/Pinegrove_Web_Release.pdf' className="text-trail-yellow underline" target="_blank">Terms of Service</a>
                 </span>
             </div>
 

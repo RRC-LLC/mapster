@@ -771,7 +771,7 @@ export default function Search({ data, markers, showMarker, route, map, searchOp
                             </div>
 
                                     {displayResults ? (
-                                        <div className="flex gap-2 mt-6 flex-col w-full">
+                                        <div className={`flex gap-2 flex-col w-full ${scoot ? 'mt-0' : 'mt-6'}`}>
                                             {!scoot && <SummaryStatistics topStatistics={searchState.topStatistics} activateFilter={activateFilter}/>}
                                             <div className="mb-1 mt-6 border-b-[1px] border-black text-base w-full flex flex-col">
                                                 <div className="px-1">
