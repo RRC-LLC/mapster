@@ -65,10 +65,10 @@ export default function InfoModal({ closeModal }) {
                             <div className="hidden md:block text-cream opacity-60 text-xs">
                                 Links:
                             </div>
-                            <a href="/Pinegrove_Web_Release.pdf" className=" text-cream opacity-60 hover:opacity-100 transition-opacity duration-150 ease text-xs underline" target="_blank">Terms of Service</a>
                             <Link href="/corrections" className="text-cream opacity-60 hover:opacity-100 transition-opacity duration-150 ease text-xs underline">Contact</Link>
-                            <a href="https://pinegroveband.com/mailing-list/" className=" text-cream opacity-60 hover:opacity-100 transition-opacity duration-150 ease text-xs underline" target="_blank" rel='noreferrer'>Mailing List</a>
                             <a href="https://github.com/RRC-LLC/mapster" className=" text-cream opacity-60 hover:opacity-100 transition-opacity duration-150 ease text-xs underline" target="_blank" rel='noreferrer'>GitHub</a>
+                            <a href="https://pinegroveband.com/mailing-list/" className=" text-cream opacity-60 hover:opacity-100 transition-opacity duration-150 ease text-xs underline" target="_blank" rel='noreferrer'>Mailing List</a>
+                            <a href="/Pinegrove_Web_Release.pdf" className=" text-cream opacity-60 hover:opacity-100 transition-opacity duration-150 ease text-xs underline" target="_blank">Terms of Service</a>
                         </div>
 
                     </section>
