@@ -50,7 +50,7 @@ export default function ImageModal({ image, closeModal }) {
                                 width={image.width}
                                 height={image.height}
                                 className="w-auto h-auto mx-auto border-[1px] border-stone-300"
-                                style={{ maxWidth: '100%' }}
+                                style={{ maxWidth: '100%', maxHeight: '80svh' }}
                             />
                         </div>
                     </section>
