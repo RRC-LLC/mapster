@@ -29,7 +29,7 @@ export const viewport = {
 }
 
 export const metadata = {
-    metadataBase: new URL('https://groveography.vercel.app/'),
+    metadataBase: new URL('https://mapster.website/'),
     applicationName: APP_NAME,
     title: {
       default: APP_DEFAULT_TITLE,
@@ -58,7 +58,7 @@ export const metadata = {
     openGraph: {
       title: APP_DEFAULT_TITLE,
       description: APP_DESCRIPTION,
-      url: 'https://groveography.vercel.app/',
+      url: 'https://mapster.website/',
       siteName: APP_NAME,
       images: [
         {
