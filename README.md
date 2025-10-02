@@ -1,6 +1,6 @@
 # Welcome to Mapster!
 
-![Mapster screenshot](SCREENSHOT.png)
+![Mapster screenshot](/public/SCREENSHOT.png)
 
 This is the repository for the [Pinegrove Map Project](https://mapster.pinegroveband.com) - otherwise known as Mapster - an exhaustive, interactive, evolving archive of Pinegrove's touring history across the United States, crafted with care in collaboration with [Router](https://router.is/). It's built primarily with [Next.js](https://github.com/vercel/next.js), [Payload](https://github.com/payloadcms/payload), and [Leaflet](https://github.com/Leaflet/Leaflet) and is being made available under the [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.en.html) license for you to freely use and make your own.
 
