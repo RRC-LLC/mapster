@@ -1,5 +1,6 @@
 import { CollectionConfig } from "payload";
 import { isAdmin } from "@/payload/access";
+import { revalidateTag } from "next/cache";
 
 export const Submissions: CollectionConfig = {
     slug: 'submissions',
@@ -50,6 +51,7 @@ export const Submissions: CollectionConfig = {
                   }
                 })
               }
+              revalidateTag('shows')
             } else if (doc.review_status === 'rejected' && doc.image) {
               // payload.delete image
               await req.payload.delete({
