@@ -47,7 +47,7 @@ export default function Show({ show }) {
             <div className="flex-auto sticky top-0 w-screen md:w-auto h-[100svh] relative">
                 <Map show={show} />
                 <AnimatePresence>
-                    {(show.images?.length > 0 || show.videos?.length > 0) && (
+                    {(show.images?.length > 0 || show.videos?.length > 0 || show.memories?.length > 0) && (
                         <div className="absolute z-[10000] inset-0">
                             <MediaGallery
                                 images={show.images} 
