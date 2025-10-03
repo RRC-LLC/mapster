@@ -41,7 +41,7 @@ export default function VideoModal({ video, closeModal }) {
                 className="drop-shadow-xl w-full max-w-[90%] sm:max-w-[70%] max-h-[75%] flex justify-center my-24"
             >
                 <div className="z-[500] flex w-full items-center flex-col gap-1">
-                    <section className="relative flex w-full p-2 bg-cream bg-cream-paper overflow-hidden flex-grow flex-col">
+                    <section className="relative flex w-full overflow-hidden flex-grow flex-col">
                         <div className="relative w-full bg-black aspect-video">
                             <iframe
                                 className="absolute inset-0 w-full h-full"

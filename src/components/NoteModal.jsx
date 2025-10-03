@@ -40,7 +40,7 @@ export default function NoteModal({ note, closeModal }) {
                 className="drop-shadow-xl w-[95%] max-w-prose max-h-[85%] flex justify-center my-24"
             >
                 <div className="z-[500] flex w-full h-full max-w-prose cream-paper items-center flex-col gap-1">
-                    <section className="relative flex w-full p-6 sm:p-12 bg-cream bg-cream-paper overflow-scroll flex-grow flex-col">
+                    <section className="relative flex w-full h-[65ch] max-h-[75svh] p-6 sm:p-12 bg-cream bg-cream-paper overflow-scroll hidden-scrollbar flex-grow flex-col">
                         <p className="text-base text-stone-800 whitespace-pre-line font-serif">
                             {note.content}
                         </p>

@@ -42,14 +42,14 @@ export default function ImageModal({ image, closeModal }) {
                 className="drop-shadow-xl max-w-[90%] sm:max-w-[75%] flex justify-center my-24"
             >
                 <div className="z-[500] flex w-full items-center flex-col gap-1">
-                    <section className="relative flex w-full p-2 bg-cream bg-cream-paper overflow-scroll flex-grow flex-col">
+                    <section className="relative flex w-full flex-grow flex-col">
                         <div className="relative w-full h-full">
                             <Image
                                 src={image.url}
                                 alt={image.alt}
                                 width={image.width}
                                 height={image.height}
-                                className="w-auto h-auto mx-auto border-[1px] border-stone-300"
+                                className="w-auto h-auto mx-auto"
                                 style={{ maxWidth: '100%', maxHeight: '80svh' }}
                             />
                         </div>

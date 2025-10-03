@@ -36,8 +36,8 @@ export default function InfoModal({ closeModal }) {
                         <div className="cursor-pointer" onClick={handleClose}>x</div>
                     </div>
 
-                    <section className="relative h-1/2 flex w-full px-2 sm:px-4 pt-6 sm:pt-8 pb-5 rounded-sm shadow-inner-show bg-gray-2 flex-grow flex-col max-w-prose">
-                        <div className="w-full h-full flex flex-col gap-6 pb-6 overflow-scroll">
+                    <section className="relative h-1/2 flex w-full px-2 sm:px-4 pb-4 pt-[2px] rounded-sm shadow-inner-show bg-gray-2 flex-grow flex-col max-w-prose">
+                        <div className="w-full text-sm sm:text-base h-full flex flex-col gap-4 sm:gap-6 pb-6 sm:pb-8 pt-6 sm:pt-8 overflow-scroll hidden-scrollbar">
                             <p className="text-cream px-2 sm:px-4">What is a map if not a registry of different places shows can happen?</p>
                             <p className="text-cream px-2 sm:px-4">In 2014, with this philosophy in tow, Pinegrove embarked on a 5 week US tour of DIY spaces across the country, along with our band-friend Tawny Peaks, booked totally by ourselves, using nothing but social media & a map.</p>
                             <p className="text-cream px-2 sm:px-4">A decade later we'd played shows in all but 2 states (sorry WY, hi HI).</p>
