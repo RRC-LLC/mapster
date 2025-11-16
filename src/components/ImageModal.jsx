@@ -3,19 +3,25 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { createPortal } from "react-dom";
 import { useEffect, useState } from "react";
+import { Spinner } from "./Spinner";
 
 export default function ImageModal({ image, closeModal }) {
     const [mounted, setMounted] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         setMounted(true);
+        setIsLoading(true);
         if (typeof window !== "undefined" && !document.getElementById('modal-root')) {
             const div = document.createElement('div');
             div.id = 'modal-root';
             document.body.appendChild(div);
         }
-        return () => setMounted(false);
-    }, []);
+        return () => {
+            setMounted(false);
+            setIsLoading(true);
+        };
+    }, [image]);
 
     const handleBackdropClick = (e) => {
         // Only close if clicking the backdrop itself, not its children
@@ -43,6 +49,11 @@ export default function ImageModal({ image, closeModal }) {
             >
                 <div className="z-[500] flex w-full items-center flex-col gap-1">
                     <section className="relative flex w-full flex-grow flex-col">
+                        {isLoading && (
+                            <div className="absolute inset-0 flex items-center justify-center">
+                                <Spinner color="#F5E6D3" size={40} />
+                            </div>
+                        )}
                         <div className="relative w-full h-full">
                             <Image
                                 src={image.url}
@@ -51,6 +62,7 @@ export default function ImageModal({ image, closeModal }) {
                                 height={image.height}
                                 className="w-auto h-auto mx-auto"
                                 style={{ maxWidth: '100%', maxHeight: '80svh' }}
+                                onLoad={() => setIsLoading(false)}
                             />
                         </div>
                     </section>
