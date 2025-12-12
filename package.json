@@ -23,7 +23,7 @@
     "framer-motion": "^12.9.1",
     "graphql": "^16.10.0",
     "leaflet": "^1.9.4",
-    "next": "15.1.9",
+    "next": "15.1.11",
     "payload": "^3.58.0",
     "plaiceholder": "^3.0.0",
     "proj4leaflet": "^1.0.2",
