@@ -26,7 +26,9 @@ import { YoutubeEmbed as YoutubeEmbed_e4594f1a88523fd718b98c27a7de78a1 } from '@
 import { default as default_00658f71dbdfeca6c411d9fe55c24968 } from '@/payload/components/IconImage.jsx'
 import { default as default_446e1308d55833503d5b440deea0af67 } from '@/payload/components/LogoImage.jsx'
 import { S3ClientUploadHandler as S3ClientUploadHandler_f97aa6c64367fa259c5bc0567239ef24 } from '@payloadcms/storage-s3/client'
+import { CollectionCards as CollectionCards_f9c02e79a4aed9a3924487c0cd4cafb1 } from '@payloadcms/next/rsc'
 
+/** @type import('payload').ImportMap */
 export const importMap = {
   "@payloadcms/richtext-lexical/rsc#RscEntryLexicalCell": RscEntryLexicalCell_44fe37237e0ebf4470c9990d8cb7b07e,
   "@payloadcms/richtext-lexical/rsc#RscEntryLexicalField": RscEntryLexicalField_44fe37237e0ebf4470c9990d8cb7b07e,
@@ -55,5 +57,6 @@ export const importMap = {
   "@/payload/fields/YoutubeEmbed#YoutubeEmbed": YoutubeEmbed_e4594f1a88523fd718b98c27a7de78a1,
   "@/payload/components/IconImage.jsx#default": default_00658f71dbdfeca6c411d9fe55c24968,
   "@/payload/components/LogoImage.jsx#default": default_446e1308d55833503d5b440deea0af67,
-  "@payloadcms/storage-s3/client#S3ClientUploadHandler": S3ClientUploadHandler_f97aa6c64367fa259c5bc0567239ef24
+  "@payloadcms/storage-s3/client#S3ClientUploadHandler": S3ClientUploadHandler_f97aa6c64367fa259c5bc0567239ef24,
+  "@payloadcms/next/rsc#CollectionCards": CollectionCards_f9c02e79a4aed9a3924487c0cd4cafb1
 }
